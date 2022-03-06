@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Local Storage</title>
+		<style>
+			.product-details {
+				background-color: antiquewhite;
+				padding: 30px;
+				margin: 12px;
+				border-radius: 10px;
+				display: inline-block;
+			}
+			.product-input label,
+			input {
+				font-size: 24px;
+				font-family: Arial, Helvetica, sans-serif;
+			}
+			.product-input input {
+				padding: 10px;
+			}
+			.product-input input {
+				/* padding: 8px; */
+				margin: 10px;
+				outline: none;
+				background-color: rgb(207, 207, 207);
+				border-radius: 5px;
+				color: rgb(32, 32, 32);
+				border: none;
+				font-size: 18px;
+			}
+			button {
+				background-color: cornflowerblue;
+				margin: 12px;
+				padding: 10px 16px;
+				cursor: pointer;
+				color: white;
+				font-size: 24px;
+				outline: none;
+				border: none;
+				border-radius: 7px;
+				transition: all 0.3s;
+			}
+			button:hover {
+				background-color: rgb(37, 109, 243);
+			}
+			.display-products {
+				display: table;
+			}
+		</style>
+	</head>
+	<body>
+		<center>
+			<h1>Porduct List</h1>
+			<hr />
+			<br />
+			<div class="product-details">
+				<div class="product-input">
+					<label for="product-name">Product Name:</label>
+					<input
+						id="product-name"
+						type="text"
+						placeholder="Product name here"
+					/>
+				</div>
+				<div class="product-input">
+					<label for="product-price">Product Price:</label>
+					<input
+						id="product-price"
+						type="text"
+						placeholder="Product price here"
+					/>
+				</div>
+				<button>Add to Cart</button>
+			</div>
+			<!-- display products -->
+			<div class="display-products"></div>
+		</center>
+	</body>
+</html>
