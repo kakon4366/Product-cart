@@ -3,7 +3,7 @@ const getProductDetails = () => {
     const porductPrice = document.getElementById('product-price').value;
      
     // validation 
-    if(!productName && !porductPrice){
+    if(!productName || !porductPrice){
         return;
     }else if(isNaN(porductPrice)){
         return;
@@ -27,7 +27,6 @@ const displayLocalStorageData = () => {
 
     for(const product in cart){
         console.log(product);
-        // console.log(Object.keys(product), Object.values(product));
         displayProducts(product, cart[product]);
     }
 }
