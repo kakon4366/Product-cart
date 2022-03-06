@@ -53,7 +53,7 @@
 	</head>
 	<body>
 		<center>
-			<h1>Porduct List</h1>
+			<h1>Product List</h1>
 			<hr />
 			<br />
 			<div class="product-details">
@@ -73,10 +73,12 @@
 						placeholder="Product price here"
 					/>
 				</div>
-				<button>Add to Cart</button>
+				<button onclick="getProductDetails()">Add to Cart</button>
 			</div>
 			<!-- display products -->
-			<div class="display-products"></div>
+			<div class="display-products">
+				<ul id="products"></ul>
+			</div>
 		</center>
 
 		<!-- javascritp -->
