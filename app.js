@@ -62,4 +62,10 @@ const addProductCart = (productName, productPrice) => {
     localStorage.setItem('cart', cartStringify);
 }
 
+//place order now
+const placeOrder = () => {
+    document.getElementById('products').textContent = '';
+    localStorage.removeItem('cart');
+}
+
 displayLocalStorageData();
